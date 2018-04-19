@@ -202,6 +202,8 @@ TEST(PairsAndListsUnitTest, is_null) {
  */
 TEST(PairsAndListsUnitTest, is_list){
   using Args = std::deque<shaka::NodePtr>;
+  shaka::gc::GC garbage_collector;
+  shaka::gc::init_create_node(garbage_collector);
 
   shaka::gc::GC garbage_collector;
   shaka::gc::init_create_node(garbage_collector);
@@ -221,7 +223,6 @@ TEST(PairsAndListsUnitTest, is_list){
  * @brief Tests the make-list function
  */
 TEST(PairsAndListsUnitTest, make_list){
-
   using Args = std::deque<shaka::NodePtr>;
   shaka::gc::GC garbage_collector;
   shaka::gc::init_create_node(garbage_collector);
@@ -260,6 +261,8 @@ TEST(PairsAndListsUnitTest, make_list){
  */
 TEST(PairsAndListsUnitTest, list){
   using Args = std::deque<shaka::NodePtr>;
+  shaka::gc::GC garbage_collector;
+  shaka::gc::init_create_node(garbage_collector);
 
   shaka::gc::GC garbage_collector;
   shaka::gc::init_create_node(garbage_collector);
@@ -287,6 +290,8 @@ TEST(PairsAndListsUnitTest, list){
  */
 TEST(PairsAndListsUnitTest, length){
   using Args = std::deque<shaka::NodePtr>;
+  shaka::gc::GC garbage_collector;
+  shaka::gc::init_create_node(garbage_collector);
 
   shaka::gc::GC garbage_collector;
   shaka::gc::init_create_node(garbage_collector);
@@ -311,6 +316,8 @@ TEST(PairsAndListsUnitTest, length){
  */
 TEST(PairsAndListsUnitTest, append){
   using Args = std::deque<shaka::NodePtr>;
+  shaka::gc::GC garbage_collector;
+  shaka::gc::init_create_node(garbage_collector);
 
   shaka::gc::GC garbage_collector;
   shaka::gc::init_create_node(garbage_collector);
@@ -395,6 +402,8 @@ TEST(PairsAndListsUnitTest, append){
  */
 TEST(PairsAndListsUnitTest, reverse){
   using Args = std::deque<shaka::NodePtr>;
+  shaka::gc::GC garbage_collector;
+  shaka::gc::init_create_node(garbage_collector);
 
   shaka::gc::GC garbage_collector;
   shaka::gc::init_create_node(garbage_collector);
@@ -490,6 +499,8 @@ TEST(PairsAndListsUnitTest, list_tail){
  */
 TEST(PairsAndListsUnitTest, list_ref) {
   using Args = std::deque<shaka::NodePtr>;
+  shaka::gc::GC garbage_collector;
+  shaka::gc::init_create_node(garbage_collector);
 
   shaka::gc::GC garbage_collector;
   shaka::gc::init_create_node(garbage_collector);
@@ -573,6 +584,8 @@ TEST(PairsAndListsUnitTest, list_set){
  */
 TEST(PairsAndListsUnitTest, list_copy) {
   using Args = std::deque<shaka::NodePtr>;
+  shaka::gc::GC garbage_collector;
+  shaka::gc::init_create_node(garbage_collector);
 
   shaka::gc::GC garbage_collector;
   shaka::gc::init_create_node(garbage_collector);
