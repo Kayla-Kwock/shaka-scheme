@@ -91,7 +91,7 @@ set(SOURCE_FILES
         src/shaka_scheme/system/gc/mark_procedures.cpp
         )
 
-add_library(${SHAKA_SCHEME_LIBRARY_NAME} SHARED ${SOURCE_FILES} src/shaka_scheme/runtime/stdproc/pairs_and_lists.cpp)
+add_library(${SHAKA_SCHEME_LIBRARY_NAME} SHARED ${SOURCE_FILES})
 target_compile_options(${SHAKA_SCHEME_LIBRARY_NAME} PRIVATE -Wall -Wextra
         -pedantic)
 # Copy the shared library DLL/dynamic library file also into the
