@@ -175,7 +175,7 @@ inline NodePtr append(NodePtr first, NodePtr second) {
 
 template <typename... Args>
 inline NodePtr append(NodePtr first, NodePtr second, Args... rest) {
-  auto node = append(first, second);
+  auto node = append(first, second);  
   return append(node, rest...);
 }
 

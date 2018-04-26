@@ -310,7 +310,7 @@ TEST(PairsAndListsUnitTest, append){
   using Args = std::deque<shaka::NodePtr>;
   shaka::gc::GC garbage_collector;
   shaka::gc::init_create_node(garbage_collector);
-  
+
   // Given: no arguments
   Args empty_append_args {};
   // When: no arguments are given to (append)
