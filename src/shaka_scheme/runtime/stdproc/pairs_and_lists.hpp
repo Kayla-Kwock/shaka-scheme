@@ -20,7 +20,6 @@ namespace stdproc {
 
 using Args = std::deque<NodePtr>;
 
-
 using Callable = std::function<std::deque<NodePtr>(std::deque<NodePtr>)>;
 namespace impl {
 
